@@ -1,17 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2022",
     "module": "commonjs",
     "moduleResolution": "node",
     "jsx": "react",
     "noImplicitAny": false,
     "sourceMap": true,
-    "outDir":"./lib/"
+    "outDir": "./lib/",
+    "lib": ["es2022", "dom"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/test/**/*"
   ]
 }
