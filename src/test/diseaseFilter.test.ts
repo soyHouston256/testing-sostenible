@@ -24,6 +24,7 @@ describe('Disease filter', () => {
 
         expect(result.length).toBe(2);
         expect(result[1].patientName).toBe(expectedName2);
+        expect(result[0].patientName).toBe(expectedName1);
     });
 });
 
